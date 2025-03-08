@@ -18,7 +18,7 @@
 - The AWS Cloud in North America has 28 Availability Zones within eight geographic Regions, with 44 Edge Network locations and two Regional Edge Cache locations.
   
 <details>
-  <summary>Click to View updated table with Availability Zones (AZs) names, Local Zones, and Wavelength Zones included. Edge locations are also organized by Region in North America </summary>
+  <summary>Click to View North America Region</summary>
 
 | **Region**              | **Availability Zones (AZs)**                                                                 | **Local Zones**                                                                                              | **Wavelength Zones**                           |
 |-------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------|
@@ -41,9 +41,15 @@
 - **Northern Virginia, Ohio, Oregon**  
 
 </details>
+
 ---
 
-### **Asia Pacific & China**  
+### **Asia Pacific & China** 
+- The AWS Cloud in Asia Pacific and China has 44 Availability Zones within 14 geographic Regions, with 34 Edge Network locations and 5 Regional Edge Cache locations.
+
+<details>
+  <summary>Click to View Asia Pacific & China Region</summary>
+  
 | **Region**            | **Availability Zones (AZs)**                                                             | **Local Zones** | **Wavelength Zones**  |
 |----------------------|------------------------------------------------------------------------------------------|-----------------|-----------------------|
 | **Beijing**         | `cn-north-1a`, `cn-north-1b`, `cn-north-1c`                                                    | -               | -                     |
@@ -78,9 +84,15 @@
 #### **Regional Edge Caches in Asia Pacific & China**  
 - **Mumbai, Singapore, Seoul, Tokyo, Sydney**  
 
+</details>
+
 ---
 
 ### **South America**  
+
+<details>
+  <summary>Click to View South America Region</summary>
+
 | **Region**         | **Availability Zones (AZs)**  |
 |-------------------|----------------------------|
 | **São Paulo**    | `sa-east-1a`, `sa-east-1b`, `sa-east-1c` |
@@ -95,9 +107,15 @@
 #### **Regional Edge Caches in South America**  
 - **São Paulo**  
 
+</details>
+
 ---
 
 ### **Europe, Middle East & Africa**  
+
+<details>
+  <summary>Click to View Europe, Middle East & Africa Region</summary>
+
 | **Region**       | **Availability Zones (AZs)** | **Local Zones** | **Wavelength Zones**  |
 |-----------------|-----------------------------|-----------------|-----------------------|
 | **Bahrain**    | `me-south-1a`, `me-south-1b`, `me-south-1c` | Manama | - |
@@ -113,6 +131,8 @@
 
 #### **Regional Edge Caches in Europe, Middle East & Africa**  
 - **Frankfurt, London**  
+
+</details>
 
 ---
 
