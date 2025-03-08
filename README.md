@@ -17,14 +17,14 @@
 | **Region**              | **Availability Zones (AZs)**                                                                 | **Local Zones**                                                                                              | **Wavelength Zones**                           |
 |-------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | **Northern Virginia**   | `us-east-1a`, `us-east-1b`, `us-east-1c`, `us-east-1d`, `us-east-1e`, `us-east-1f`                      | Atlanta, Boston, Chicago, Dallas, Denver, Houston, Kansas City, Las Vegas, Los Angeles, Miami, Minneapolis, New York City, Philadelphia, Phoenix, Portland, Seattle | Boston, Chicago, Dallas, Denver, Los Angeles, Miami, New York City, San Francisco |
-| **Ohio**               | us-east-2a, us-east-2b, us-east-2c                                                           | -                                                                                                            | -                                              |
-| **Northern California** | us-west-1a, us-west-1b, us-west-1c                                                           | -                                                                                                            | -                                              |
-| **Oregon**             | us-west-2a, us-west-2b, us-west-2c, us-west-2d                                               | Los Angeles, Las Vegas, Phoenix, Salt Lake City, Seattle, Portland, Denver                                   | San Francisco, Seattle                         |
-| **AWS GovCloud (US-East)** | us-gov-east-1a, us-gov-east-1b, us-gov-east-1c                                         | -                                                                                                            | -                                              |
-| **AWS GovCloud (US-West)** | us-gov-west-1a, us-gov-west-1b, us-gov-west-1c                                         | -                                                                                                            | -                                              |
-| **Canada Central**     | ca-central-1a, ca-central-1b, ca-central-1c                                                  | -                                                                                                            | -                                              |
-| **Canada West**        | ca-west-1a, ca-west-1b, ca-west-1c                                                            | -                                                                                                            | -                                              |
-| **Mexico (Central)**   | mx-central-1a, mx-central-1b, mx-central-1c                                                  | -                                                                                                            | -                                              |
+| **Ohio**               | `us-east-2a`, `us-east-2b`, `us-east-2c`                                                           | -                                                                                                            | -                                              |
+| **Northern California** | `us-west-1a`, `us-west-1b`, `us-west-1c`                                                           | -                                                                                                            | -                                              |
+| **Oregon**             | `us-west-2a`, `us-west-2b`, `us-west-2c`, `us-west-2d`                                               | Los Angeles, Las Vegas, Phoenix, Salt Lake City, Seattle, Portland, Denver                                   | San Francisco, Seattle                         |
+| **AWS GovCloud (US-East)** | `us-gov-east-1a`, `us-gov-east-1b`, `us-gov-east-1c`                                         | -                                                                                                            | -                                              |
+| **AWS GovCloud (US-West)** | `us-gov-west-1a`, `us-gov-west-1b`, `us-gov-west-1c`                                         | -                                                                                                            | -                                              |
+| **Canada Central**     | `ca-central-1a`, `ca-central-1b`, `ca-central-1c`                                                  | -                                                                                                            | -                                              |
+| **Canada West**        | `ca-west-1a`, `ca-west-1b`, `ca-west-1c`                                                            | -                                                                                                            | -                                              |
+| **Mexico (Central)**   | `mx-central-1a`, `mx-central-1b`, `mx-central-1c`                                                  | -                                                                                                            | -                                              |
 
 #### **Edge Locations in North America**  
 - **USA:** Ashburn (VA), Atlanta (GA), Boston (MA), Chicago (IL), Columbus (OH), Dallas/Fort Worth (TX), Denver (CO), Houston (TX), Jacksonville (FL), Kansas City (MO), Los Angeles (CA), Miami (FL), Minneapolis (MN), Nashville (TN), New York (NY), Newark (NJ), Philadelphia (PA), Phoenix (AZ), Portland (OR), Salt Lake City (UT), San Jose (CA), Seattle (WA), South Bend (IN), St. Louis (MO), Tampa Bay (FL), Washington D.C.  
@@ -39,20 +39,20 @@
 ### **Asia Pacific & China**  
 | **Region**            | **Availability Zones (AZs)**                                                             | **Local Zones** | **Wavelength Zones**  |
 |----------------------|------------------------------------------------------------------------------------------|-----------------|-----------------------|
-| **Beijing**         | cn-north-1a, cn-north-1b, cn-north-1c                                                    | -               | -                     |
-| **Hong Kong SAR**   | ap-east-1a, ap-east-1b, ap-east-1c                                                       | -               | -                     |
-| **Hyderabad**       | ap-south-2a, ap-south-2b, ap-south-2c                                                    | -               | -                     |
-| **Jakarta**         | ap-southeast-3a, ap-southeast-3b, ap-southeast-3c                                        | -               | -                     |
-| **Malaysia**        | ap-southeast-4a, ap-southeast-4b, ap-southeast-4c                                        | -               | -                     |
-| **Melbourne**       | ap-southeast-5a, ap-southeast-5b, ap-southeast-5c                                        | -               | -                     |
-| **Mumbai**         | ap-south-1a, ap-south-1b, ap-south-1c                                                     | Chennai, Kolkata | -                     |
-| **Ningxia**        | cn-northwest-1a, cn-northwest-1b, cn-northwest-1c                                         | -               | -                     |
-| **Osaka**          | ap-northeast-3a, ap-northeast-3b, ap-northeast-3c                                         | -               | -                     |
-| **Seoul**          | ap-northeast-2a, ap-northeast-2b, ap-northeast-2c, ap-northeast-2d                        | -               | Seoul                 |
-| **Singapore**      | ap-southeast-1a, ap-southeast-1b, ap-southeast-1c                                         | Jakarta         | -                     |
-| **Sydney**         | ap-southeast-2a, ap-southeast-2b, ap-southeast-2c                                         | Perth, Brisbane | -                     |
-| **Thailand**       | ap-southeast-6a, ap-southeast-6b, ap-southeast-6c                                         | Bangkok         | -                     |
-| **Tokyo**          | ap-northeast-1a, ap-northeast-1b, ap-northeast-1c, ap-northeast-1d                        | Osaka           | Tokyo                 |
+| **Beijing**         | `cn-north-1a`, `cn-north-1b`, `cn-north-1c`                                                    | -               | -                     |
+| **Hong Kong SAR**   | `ap-east-1a`, `ap-east-1b`, `ap-east-1c`                                                       | -               | -                     |
+| **Hyderabad**       | `ap-south-2a`, `ap-south-2b`, `ap-south-2c`                                                    | -               | -                     |
+| **Jakarta**         | `ap-southeast-3a`, `ap-southeast-3b`, `ap-southeast-3c`                                        | -               | -                     |
+| **Malaysia**        | `ap-southeast-4a`, `ap-southeast-4b`, `ap-southeast-4c`                                        | -               | -                     |
+| **Melbourne**       | `ap-southeast-5a`, `ap-southeast-5b`, `ap-southeast-5c`                                        | -               | -                     |
+| **Mumbai**         | `ap-south-1a`, `ap-south-1b`, `ap-south-1c`                                                     | Chennai, Kolkata | -                     |
+| **Ningxia**        | `cn-northwest-1a`, `cn-northwest-1b`, `cn-northwest-1c`                                         | -               | -                     |
+| **Osaka**          | `ap-northeast-3a`, `ap-northeast-3b`, `ap-northeast-3c`                                         | -               | -                     |
+| **Seoul**          | `ap-northeast-2a`, `ap-northeast-2b`, `ap-northeast-2c`, `ap-northeast-2d`                        | -               | Seoul                 |
+| **Singapore**      | `ap-southeast-1a`, `ap-southeast-1b`, `ap-southeast-1c`                                         | Jakarta         | -                     |
+| **Sydney**         | `ap-southeast-2a`, `ap-southeast-2b`, `ap-southeast-2c`                                         | Perth, Brisbane | -                     |
+| **Thailand**       | `ap-southeast-6a`, `ap-southeast-6b`, `ap-southeast-6c`                                         | Bangkok         | -                     |
+| **Tokyo**          | `ap-northeast-1a`, `ap-northeast-1b`, `ap-northeast-1c`, `ap-northeast-1d`                        | Osaka           | Tokyo                 |
 
 #### **Edge Locations in Asia Pacific & China**  
 - **Australia:** Brisbane, Melbourne, Perth, Sydney  
