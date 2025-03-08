@@ -6,6 +6,7 @@
 ## AWS Global Infrastructure
 - The AWS Global Cloud Infrastructure is a secure, extensive, and reliable cloud infrastructure, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single step or you want to build and deploy specific applications closer to your end users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it.
 - With millions of active customers and tens of thousands of partners globally, AWS has the largest and most dynamic community. Customers across virtually every industry and of every size, including start-ups, enterprises, and public sector organizations, are running every imaginable use case on AWS.
+  
 - **AWS Global Infrastructure Map**
   - The AWS Cloud spans 114 Availability Zones within 36 geographic regions, with announced plans for 12 more Availability Zones and four more AWS Regions in New Zealand, the Kingdom of Saudi Arabia, Taiwan, and the AWS European Sovereign Cloud.
 
@@ -14,6 +15,11 @@
 ## **AWS Regions and Availability Zones (AZs)**  
 
 ### **North America**  
+- The AWS Cloud in North America has 28 Availability Zones within eight geographic Regions, with 44 Edge Network locations and two Regional Edge Cache locations.
+  
+<details>
+  <summary>Click to View updated table with Availability Zones (AZs) names, Local Zones, and Wavelength Zones included. Edge locations are also organized by Region in North America </summary>
+
 | **Region**              | **Availability Zones (AZs)**                                                                 | **Local Zones**                                                                                              | **Wavelength Zones**                           |
 |-------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | **Northern Virginia**   | `us-east-1a`, `us-east-1b`, `us-east-1c`, `us-east-1d`, `us-east-1e`, `us-east-1f`                      | Atlanta, Boston, Chicago, Dallas, Denver, Houston, Kansas City, Las Vegas, Los Angeles, Miami, Minneapolis, New York City, Philadelphia, Phoenix, Portland, Seattle | Boston, Chicago, Dallas, Denver, Los Angeles, Miami, New York City, San Francisco |
@@ -34,6 +40,7 @@
 #### **Regional Edge Caches in North America**  
 - **Northern Virginia, Ohio, Oregon**  
 
+</details>
 ---
 
 ### **Asia Pacific & China**  
