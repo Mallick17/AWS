@@ -5,19 +5,28 @@
 
 ## AWS Global Infrastructure
 - The AWS Global Cloud Infrastructure is a secure, extensive, and reliable cloud infrastructure, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single step or you want to build and deploy specific applications closer to your end users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it.
-- Amazon Web Services (AWS) operates in a globally distributed cloud infrastructure to provide high availability, low latency, and fault tolerance. This infrastructure is built upon Regions, Availability Zones (AZs), Local Zones, Wavelength Zones, and Edge Locations.
-- Each AWS Region consists of:
-  - Multiple Availability Zones (AZs)
-  - Local Zones
-  - Wavelength Zones
-  - Regional Edge Caches
-  - Direct Connect Locations
+
 
 ### AWS Global Infrastructure Components
+- Amazon Web Services (AWS) operates in a globally distributed cloud infrastructure to provide high availability, low latency, and fault tolerance. This infrastructure is built upon Regions, Availability Zones (AZs), Local Zones, Wavelength Zones, and Edge Locations.
+  
 1. **AWS Regions**
+- An AWS Region is a geographically isolated area that contains multiple Availability Zones (AZs). Each AWS Region operates independently and has low-latency connectivity to other Regions.
+- Each AWS Region consists of:
+  - Multiple Availability Zones (AZs)
+  - Regional Edge Caches
+  - Direct Connect Locations
+    
 2. **Availability Zones (AZs)**
+- An Availability Zone (AZ) is a physically separate data center within a Region. Each AZ has:
+  - Independent power, cooling, and networking
+  - Low-latency connectivity to other AZs in the same Region
+  - Automatic failover and redundancy
+    
 3. **Local Zones**
+
 4. **Wavelength Zones**
+
 5. **Edge Locations**
 
 
