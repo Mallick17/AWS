@@ -76,7 +76,7 @@
 ### **South America**  
 | **Region**         | **Availability Zones (AZs)**  |
 |-------------------|----------------------------|
-| **São Paulo**    | sa-east-1a, sa-east-1b, sa-east-1c |
+| **São Paulo**    | `sa-east-1a`, `sa-east-1b`, `sa-east-1c` |
 
 #### **Edge Locations in South America**  
 - **Argentina:** Buenos Aires  
@@ -93,13 +93,13 @@
 ### **Europe, Middle East & Africa**  
 | **Region**       | **Availability Zones (AZs)** | **Local Zones** | **Wavelength Zones**  |
 |-----------------|-----------------------------|-----------------|-----------------------|
-| **Bahrain**    | me-south-1a, me-south-1b, me-south-1c | Manama | - |
-| **Cape Town**  | af-south-1a, af-south-1b, af-south-1c | Johannesburg | - |
-| **Frankfurt**  | eu-central-1a, eu-central-1b, eu-central-1c | Hamburg, Berlin | - |
-| **Ireland**    | eu-west-1a, eu-west-1b, eu-west-1c | - | - |
-| **London**     | eu-west-2a, eu-west-2b, eu-west-2c | - | London |
-| **Paris**      | eu-west-3a, eu-west-3b, eu-west-3c | - | - |
-| **Stockholm**  | eu-north-1a, eu-north-1b, eu-north-1c | - | - |
+| **Bahrain**    | `me-south-1a`, `me-south-1b`, `me-south-1c` | Manama | - |
+| **Cape Town**  | `af-south-1a`, `af-south-1b`, `af-south-1c` | Johannesburg | - |
+| **Frankfurt**  | `eu-central-1a`, `eu-central-1b`, `eu-central-1c` | Hamburg, Berlin | - |
+| **Ireland**    | `eu-west-1a`, `eu-west-1b`, `eu-west-1c` | - | - |
+| **London**     | `eu-west-2a`, `eu-west-2b`, `eu-west-2c` | - | London |
+| **Paris**      | `eu-west-3a`, `eu-west-3b`, `eu-west-3c` | - | - |
+| **Stockholm**  | `eu-north-1a`, `eu-north-1b`, `eu-north-1c` | - | - |
 
 #### **Edge Locations in Europe, Middle East & Africa**  
 - **Cities:** Amsterdam, Berlin, Dubai, Frankfurt, Johannesburg, London, Madrid, Paris, Stockholm, Tel Aviv, Zurich  
