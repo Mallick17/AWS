@@ -89,6 +89,7 @@
 ---
 
 ### **South America**  
+- The AWS Cloud in South America has 3 Availability Zones within one geographic Region, with four Edge Network locations and one Regional Edge Cache location.
 
 <details>
   <summary>Click to View South America Region</summary>
@@ -112,6 +113,7 @@
 ---
 
 ### **Europe, Middle East & Africa**  
+- The AWS Cloud in Europe, Middle East and Africa has 36 Availability Zones within 12 geographic Regions, with 39 Edge Network locations and two Regional Edge Cache locations.
 
 <details>
   <summary>Click to View Europe, Middle East & Africa Region</summary>
