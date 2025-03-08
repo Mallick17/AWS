@@ -5,15 +5,29 @@
 
 ## AWS Global Infrastructure
 - The AWS Global Cloud Infrastructure is a secure, extensive, and reliable cloud infrastructure, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single step or you want to build and deploy specific applications closer to your end users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it.
-- With millions of active customers and tens of thousands of partners globally, AWS has the largest and most dynamic community. Customers across virtually every industry and of every size, including start-ups, enterprises, and public sector organizations, are running every imaginable use case on AWS.
-  
-- **AWS Global Infrastructure Map**
-  - The AWS Cloud spans 114 Availability Zones within 36 geographic regions, with announced plans for 12 more Availability Zones and four more AWS Regions in New Zealand, the Kingdom of Saudi Arabia, Taiwan, and the AWS European Sovereign Cloud.
+- Amazon Web Services (AWS) operates in a globally distributed cloud infrastructure to provide high availability, low latency, and fault tolerance. This infrastructure is built upon Regions, Availability Zones (AZs), Local Zones, Wavelength Zones, and Edge Locations.
+- Each AWS Region consists of:
+  - Multiple Availability Zones (AZs)
+  - Local Zones
+  - Wavelength Zones
+  - Regional Edge Caches
+  - Direct Connect Locations
+
+### AWS Global Infrastructure Components
+1. **AWS Regions**
+2. **Availability Zones (AZs)**
+3. **Local Zones**
+4. **Wavelength Zones**
+5. **Edge Locations**
+
+
+
 
 ---
 
 ## **AWS Regions and Availability Zones (AZs)**  
-
+- The AWS Cloud spans 114 Availability Zones within 36 geographic regions, with announced plans for 12 more Availability Zones and four more AWS Regions in New Zealand, the Kingdom of Saudi Arabia, Taiwan, and the AWS European Sovereign Cloud.
+  
 ### **North America**  
 - The AWS Cloud in North America has 28 Availability Zones within eight geographic Regions, with 44 Edge Network locations and two Regional Edge Cache locations.
   
