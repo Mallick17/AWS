@@ -16,14 +16,14 @@
   - Multiple Availability Zones (AZs)
   - Regional Edge Caches
   - Direct Connect Locations
-    ![GL](https://github.com/user-attachments/assets/b2e22b15-5be5-4d4c-ab8a-d3eb7e1430f1)
+![image](https://github.com/user-attachments/assets/7724111e-4ce5-47e8-bc96-da24a4a541ff)  
 
 2. **Availability Zones (AZs)**
 - An Availability Zone (AZ) is a physically separate data center within a Region. Each AZ has:
   - Independent power, cooling, and networking
   - Low-latency connectivity to other AZs in the same Region
   - Automatic failover and redundancy
-![image](https://github.com/user-attachments/assets/7724111e-4ce5-47e8-bc96-da24a4a541ff)
+
 
 
 3. **Local Zones**
