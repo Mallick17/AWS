@@ -4,8 +4,8 @@
 - AWS's virtual computers emulate most of the attributes of a real computer, including hardware central processing units (CPUs) and graphics processing units (GPUs) for processing; local/RAM memory; hard-disk (HDD)/SSD storage; a choice of operating systems; networking; and pre-loaded application software such as web servers, databases, and customer relationship management (CRM).
 
 ## AWS Global Infrastructure
-- The AWS Global Cloud Infrastructure is a secure, extensive, and reliable cloud infrastructure, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single step or you want to build and deploy specific applications closer to your end users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it.
-- AWS infrastructure is designed in a layered architecture to maximize fault tolerance, scalability, and security.
+- The AWS Global Infrastructure is a globally distributed network designed to provide reliable, secure, and scalable cloud solutions. It consists of multiple regions and availability zones strategically located worldwide to minimize latency and ensure high availability. Businesses rely on the AWS Global Infrastructure to host their applications closer to their customers, enhancing performance and user satisfaction. With its robust design, the AWS Global Infrastructure supports redundancy, ensuring business continuity even during unexpected disruptions.
+- AWS Global Infrastructure is the foundational architecture that supports Amazon Web Services (AWS) and enables the delivery of services worldwide. It is designed to provide high availability, fault tolerance, and low latency for applications.
 
 ### AWS Global Infrastructure Components
 - Amazon Web Services (AWS) operates in a globally distributed cloud infrastructure to provide high availability, low latency, and fault tolerance. This infrastructure is built upon Regions, Availability Zones (AZs), Local Zones, Wavelength Zones, and Edge Locations.
@@ -22,7 +22,9 @@
   - Independent power, cooling, and networking
   - Low-latency connectivity to other AZs in the same Region
   - Automatic failover and redundancy
-    
+![image](https://github.com/user-attachments/assets/7724111e-4ce5-47e8-bc96-da24a4a541ff)
+
+
 3. **Local Zones**
 - AWS Local Zones are designed to extend AWS services closer to end users in cities where no AWS Region exists. These zones provide low-latency computing for applications like gaming, live streaming, augmented reality (AR), and machine learning (ML).
 
