@@ -16,15 +16,13 @@
   - Multiple Availability Zones (AZs)
   - Regional Edge Caches
   - Direct Connect Locations
-![image](https://github.com/user-attachments/assets/7724111e-4ce5-47e8-bc96-da24a4a541ff)  
 
 2. **Availability Zones (AZs)**
 - An Availability Zone (AZ) is a physically separate data center within a Region. Each AZ has:
   - Independent power, cooling, and networking
   - Low-latency connectivity to other AZs in the same Region
   - Automatic failover and redundancy
-
-
+![image](https://github.com/user-attachments/assets/7724111e-4ce5-47e8-bc96-da24a4a541ff)  
 
 3. **Local Zones**
 - AWS Local Zones are designed to extend AWS services closer to end users in cities where no AWS Region exists. These zones provide low-latency computing for applications like gaming, live streaming, augmented reality (AR), and machine learning (ML).
