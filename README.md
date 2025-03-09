@@ -5,7 +5,7 @@
 
 ## AWS Global Infrastructure
 - The AWS Global Cloud Infrastructure is a secure, extensive, and reliable cloud infrastructure, offering over 200 fully featured services from data centers globally. Whether you need to deploy your application workloads across the globe in a single step or you want to build and deploy specific applications closer to your end users with single-digit millisecond latency, AWS provides you the cloud infrastructure where and when you need it.
-
+- AWS infrastructure is designed in a layered architecture to maximize fault tolerance, scalability, and security.
 
 ### AWS Global Infrastructure Components
 - Amazon Web Services (AWS) operates in a globally distributed cloud infrastructure to provide high availability, low latency, and fault tolerance. This infrastructure is built upon Regions, Availability Zones (AZs), Local Zones, Wavelength Zones, and Edge Locations.
@@ -24,15 +24,59 @@
   - Automatic failover and redundancy
     
 3. **Local Zones**
+- AWS Local Zones are designed to extend AWS services closer to end users in cities where no AWS Region exists. These zones provide low-latency computing for applications like gaming, live streaming, augmented reality (AR), and machine learning (ML).
 
 4. **Wavelength Zones**
-
+- AWS Wavelength Zones are built for 5G networks, enabling developers to run applications at ultra-low latency by placing compute and storage within telecom operator data centers. These are ideal for applications like autonomous vehicles, real-time gaming, and AR/VR.
+  
 5. **Edge Locations**
-
-
-
+- AWS Edge Locations are part of AWS CloudFront (CDN) network to cache and deliver content faster to end users. These locations reduce latency and improve data transfer speeds.
 
 ---
+## AWS Global Infrastructure Architecture
+- AWS infrastructure is designed in a layered architecture to maximize fault tolerance, scalability, and security.
+- **AWS Regions**:
+  - Independent cloud environments (geographically separate)
+- **Availability Zones (AZs):**
+  - Isolated data centers within a Region
+- **Local Zones:**
+  - Bring AWS services closer to users in large cities
+- **Wavelength Zones:**
+  - Enable ultra-low-latency applications for 5G networks
+- **Edge Locations:**
+  - Accelerate content delivery via AWS CloudFront
+
+### **High-Level AWS Architecture Diagram**  
+
+```pgsql
+                         +-------------------------------------------------+
+                         |               AWS Global Infrastructure         |
+                         +-------------------------------------------------+
+                                         /               \
+         +-----------------------------------------------------------+
+         |                      AWS Regions                           |
+         +-----------------------------------------------------------+
+              /       |        |        |        |        |        \
+    +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ +-------+
+    | Region | | Region | | Region | | Region | | Region | | Region | | Region |
+    | (US)   | | (EU)   | | (Asia) | | (Canada)| | (SA)   | | (ME)   | | (China) |
+    +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ +-------+
+              /       |        |        |        |        |        \
+    +---------------------------------------------------------------+
+    |                    Availability Zones (AZs)                    |
+    |      (Data Centers with Compute, Storage, and Networking)      |
+    +---------------------------------------------------------------+
+              /       |        |        |        |        |        \
+  +-------------------------------------------------------------+
+  |   Local Zones  |    Wavelength Zones    |    Edge Locations  |
+  +-------------------------------------------------------------+
+        |                     |                         |
+        |                     |                         |
+  +------------------------------------+         +----------------------+
+  |       Customer Applications        |         |  AWS Services (CDN)  |
+  +------------------------------------+         +----------------------+
+```
+
 
 ## **AWS Regions and Availability Zones (AZs)**  
 - The AWS Cloud spans 114 Availability Zones within 36 geographic regions, with announced plans for 12 more Availability Zones and four more AWS Regions in New Zealand, the Kingdom of Saudi Arabia, Taiwan, and the AWS European Sovereign Cloud.
@@ -158,6 +202,17 @@
 - **Frankfurt, London**  
 
 </details>
+
+---
+
+## **AWS Infrastructure Benefits**  
+
+AWS provides a highly **resilient, scalable, and low-latency** cloud infrastructure. Key benefits include:  
+
+1. **Fault Tolerance:** Multiple AZs prevent downtime due to hardware failures.  
+2. **Low Latency:** Edge Locations and Wavelength Zones ensure fast content delivery.  
+3. **Scalability:** Auto Scaling, Elastic Load Balancing, and AWS Global Accelerator optimize performance.  
+4. **Security & Compliance:** AWS follows industry security standards like **ISO 27001, SOC 2, HIPAA, and GDPR**.  
 
 ---
 
