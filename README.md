@@ -15,7 +15,7 @@
 - Each AWS Region consists of:
   - Multiple Availability Zones (AZs)
   - Regional Edge Caches
-  - Direct Connect Locations
+  - AWS Direct Connect
 
 2. **Availability Zones (AZs)**
 - An Availability Zone (AZ) is a physically separate data center within a Region. Each AZ has:
