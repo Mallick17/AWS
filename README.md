@@ -116,6 +116,32 @@
 - **Flexible workloads** that can be restarted if terminated, such as data processing tasks.
 
 ---
+<details>
+  <summary>Key Differences and Common Features inbetween REserved Instances and Savings Plan</summary>
+
+
+### **Key Differences Between Reserved Instances and Savings Plans**
+
+| **Aspect**                  | **Reserved Instances (RIs)**                                  | **Savings Plans**                                                  |
+|-----------------------------|---------------------------------------------------------------|--------------------------------------------------------------------|
+| **Commitment Type**          | Commitment to a specific **instance type**, **region**, and **availability zone** (for standard RIs). | Commitment to a **dollar amount** of usage over a time period (1 or 3 years). Not tied to specific instance types. |
+| **Flexibility**              | **Low flexibility**. Once committed, you're locked into specific instance types and regions. | **High flexibility**. Can be applied to different instance types, regions, and services. |
+| **Applicable Services**      | Primarily for **EC2 instances** (including specific instance types). | Applies to a broader range of services including **EC2**, **Lambda**, **Fargate**, and **SageMaker**. |
+| **Discounts**                | Typically offers a discount of **30-60%** compared to On-Demand pricing. | Offers discounts of **up to 72%** for EC2 instances (varies by plan type), with slightly lower discounts for other services (e.g., Lambda and Fargate). |
+| **Payment Options**          | Available with **3 payment options**: 
+   - All Upfront
+   - Partial Upfront
+   - No Upfront |
+   | Available with **3 payment options**: 
+   - All Upfront
+   - Partial Upfront
+   - No Upfront |
+| **Changes After Purchase**   | Difficult to modify after purchase. Reserved Instances cannot easily be changed, and you may be locked into your commitment unless you sell the reserved instances on the **Reserved Instance Marketplace**. | More flexible. You can change the instance type, region, or even switch between services like EC2, Lambda, Fargate, etc., within your committed dollar amount. |
+| **Term Length**              | Reserved Instances are available with **1-year** or **3-year** terms. | Savings Plans also have **1-year** or **3-year** terms. |
+| **Instance Family & Size**   | Specific to an **instance family** (e.g., M5, C5) and size (e.g., m5.large, c5.xlarge) when using Standard RIs. | No instance type or size restrictions. Applicable across instance families and sizes. |
+| **Scope**                    | Tied to a **specific region** and **availability zone** for standard RIs, which limits their application. | Can apply to all regions and availability zones, offering much broader flexibility. |
+| **Instance Termination**     | **No automatic termination**. You are still billed even if you don’t use the Reserved Instance. | **No termination** for savings plans, and you only pay for what you commit to using. |  
+</details>
 
 ### 5. **Free Tier**
 
