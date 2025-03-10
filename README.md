@@ -1,219 +1,129 @@
-# AWS
-- Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic).
-- These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms.
-- AWS's virtual computers emulate most of the attributes of a real computer, including hardware central processing units (CPUs) and graphics processing units (GPUs) for processing; local/RAM memory; hard-disk (HDD)/SSD storage; a choice of operating systems; networking; and pre-loaded application software such as web servers, databases, and customer relationship management (CRM).
+## AWS Pricing Models: 
 
-## AWS Global Infrastructure
-- The AWS Global Infrastructure is a globally distributed network designed to provide reliable, secure, and scalable cloud solutions. It consists of multiple regions and availability zones strategically located worldwide to minimize latency and ensure high availability. Businesses rely on the AWS Global Infrastructure to host their applications closer to their customers, enhancing performance and user satisfaction. With its robust design, the AWS Global Infrastructure supports redundancy, ensuring business continuity even during unexpected disruptions.
-- AWS Global Infrastructure is the foundational architecture that supports Amazon Web Services (AWS) and enables the delivery of services worldwide. It is designed to provide high availability, fault tolerance, and low latency for applications.
+### 1. **On-Demand Instances**
 
-### AWS Global Infrastructure Components
-- Amazon Web Services (AWS) operates in a globally distributed cloud infrastructure to provide high availability, low latency, and fault tolerance. This infrastructure is built upon Regions, Availability Zones (AZs), Local Zones, Wavelength Zones, and Edge Locations.
+#### Description:
+- **On-Demand** allows you to pay for computing resources (like EC2 instances) on an hourly or per-second basis, without any long-term commitments.
+- This is the **default pricing model** for AWS EC2 compute services.
+- You pay for the compute capacity used while the instance is running.
+
+#### Pros:
+- **Pay-as-you-go model**: You only pay for what you use (per hour/second).
+- **No long-term commitment**: You can start and stop instances at will.
+- **High flexibility**: Ideal for unpredictable workloads or short-term projects.
   
-1. **AWS Regions**
-- An AWS Region is a geographically isolated area that contains multiple Availability Zones (AZs). Each AWS Region operates independently and has low-latency connectivity to other Regions.
-- Each AWS Region consists of:
-  - Multiple Availability Zones (AZs)
-  - Regional Edge Caches
-  - AWS Direct Connect
+#### Cons:
+- **Expensive**: It is one of the most expensive pricing models for long-term workloads.
+- **Not suitable for long-running production instances**: There are cheaper options (Reserved Instances or Savings Plans) for long-term use.
 
-2. **Availability Zones (AZs)**
-- An Availability Zone (AZ) is a physically separate data center within a Region. Each AZ has:
-  - Independent power, cooling, and networking
-  - Low-latency connectivity to other AZs in the same Region
-  - Automatic failover and redundancy
-![image](https://github.com/user-attachments/assets/7724111e-4ce5-47e8-bc96-da24a4a541ff)  
-
-3. **Local Zones**
-- AWS Local Zones are designed to extend AWS services closer to end users in cities where no AWS Region exists. These zones provide low-latency computing for applications like gaming, live streaming, augmented reality (AR), and machine learning (ML).
-
-4. **Wavelength Zones**
-- AWS Wavelength Zones are built for 5G networks, enabling developers to run applications at ultra-low latency by placing compute and storage within telecom operator data centers. These are ideal for applications like autonomous vehicles, real-time gaming, and AR/VR.
-  
-5. **Edge Locations**
-- AWS Edge Locations are part of AWS CloudFront (CDN) network to cache and deliver content faster to end users. These locations reduce latency and improve data transfer speeds.
-
----
-## AWS Global Infrastructure Architecture
-- AWS infrastructure is designed in a layered architecture to maximize fault tolerance, scalability, and security.
-- **AWS Regions**:
-  - Independent cloud environments (geographically separate)
-- **Availability Zones (AZs):**
-  - Isolated data centers within a Region
-- **Local Zones:**
-  - Bring AWS services closer to users in large cities
-- **Wavelength Zones:**
-  - Enable ultra-low-latency applications for 5G networks
-- **Edge Locations:**
-  - Accelerate content delivery via AWS CloudFront
-
-### **High-Level AWS Architecture Diagram**  
-
-```pgsql
-                         +-------------------------------------------------+
-                         |               AWS Global Infrastructure         |
-                         +-------------------------------------------------+
-                                         /               \
-         +-----------------------------------------------------------+
-         |                      AWS Regions                           |
-         +-----------------------------------------------------------+
-              /       |        |        |        |        |        \
-    +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ +-------+
-    | Region | | Region | | Region | | Region | | Region | | Region | | Region |
-    | (US)   | | (EU)   | | (Asia) | | (Canada)| | (SA)   | | (ME)   | | (China) |
-    +-------+ +-------+ +-------+ +-------+ +-------+ +-------+ +-------+
-              /       |        |        |        |        |        \
-    +---------------------------------------------------------------+
-    |                    Availability Zones (AZs)                    |
-    |      (Data Centers with Compute, Storage, and Networking)      |
-    +---------------------------------------------------------------+
-              /       |        |        |        |        |        \
-  +-------------------------------------------------------------+
-  |   Local Zones  |    Wavelength Zones    |    Edge Locations  |
-  +-------------------------------------------------------------+
-        |                     |                         |
-        |                     |                         |
-  +------------------------------------+         +----------------------+
-  |       Customer Applications        |         |  AWS Services (CDN)  |
-  +------------------------------------+         +----------------------+
-```
-
-
-## **AWS Regions and Availability Zones (AZs)**  
-- The AWS Cloud spans 114 Availability Zones within 36 geographic regions, with announced plans for 12 more Availability Zones and four more AWS Regions in New Zealand, the Kingdom of Saudi Arabia, Taiwan, and the AWS European Sovereign Cloud.
-  
-### **North America**  
-- The AWS Cloud in North America has 28 Availability Zones within eight geographic Regions, with 44 Edge Network locations and two Regional Edge Cache locations.
-  
-<details>
-  <summary>Click to View North America Region</summary>
-
-| **Region**              | **Availability Zones (AZs)**                                                                 | **Local Zones**                                                                                              | **Wavelength Zones**                           |
-|-------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| **Northern Virginia**   | `us-east-1a`, `us-east-1b`, `us-east-1c`, `us-east-1d`, `us-east-1e`, `us-east-1f`                      | Atlanta, Boston, Chicago, Dallas, Denver, Houston, Kansas City, Las Vegas, Los Angeles, Miami, Minneapolis, New York City, Philadelphia, Phoenix, Portland, Seattle | Boston, Chicago, Dallas, Denver, Los Angeles, Miami, New York City, San Francisco |
-| **Ohio**               | `us-east-2a`, `us-east-2b`, `us-east-2c`                                                           | -                                                                                                            | -                                              |
-| **Northern California** | `us-west-1a`, `us-west-1b`, `us-west-1c`                                                           | -                                                                                                            | -                                              |
-| **Oregon**             | `us-west-2a`, `us-west-2b`, `us-west-2c`, `us-west-2d`                                               | Los Angeles, Las Vegas, Phoenix, Salt Lake City, Seattle, Portland, Denver                                   | San Francisco, Seattle                         |
-| **AWS GovCloud (US-East)** | `us-gov-east-1a`, `us-gov-east-1b`, `us-gov-east-1c`                                         | -                                                                                                            | -                                              |
-| **AWS GovCloud (US-West)** | `us-gov-west-1a`, `us-gov-west-1b`, `us-gov-west-1c`                                         | -                                                                                                            | -                                              |
-| **Canada Central**     | `ca-central-1a`, `ca-central-1b`, `ca-central-1c`                                                  | -                                                                                                            | -                                              |
-| **Canada West**        | `ca-west-1a`, `ca-west-1b`, `ca-west-1c`                                                            | -                                                                                                            | -                                              |
-| **Mexico (Central)**   | `mx-central-1a`, `mx-central-1b`, `mx-central-1c`                                                  | -                                                                                                            | -                                              |
-
-#### **Edge Locations in North America**  
-- **USA:** Ashburn (VA), Atlanta (GA), Boston (MA), Chicago (IL), Columbus (OH), Dallas/Fort Worth (TX), Denver (CO), Houston (TX), Jacksonville (FL), Kansas City (MO), Los Angeles (CA), Miami (FL), Minneapolis (MN), Nashville (TN), New York (NY), Newark (NJ), Philadelphia (PA), Phoenix (AZ), Portland (OR), Salt Lake City (UT), San Jose (CA), Seattle (WA), South Bend (IN), St. Louis (MO), Tampa Bay (FL), Washington D.C.  
-- **Canada:** Montreal (QC), Toronto (ON)  
-- **Mexico:** Queretaro  
-
-#### **Regional Edge Caches in North America**  
-- **Northern Virginia, Ohio, Oregon**  
-
-</details>
+#### When to Use:
+- **Short-term projects** (e.g., Proof of Concepts, testing, and performance evaluations).
+- **Unpredictable workloads** where capacity needs are not easily forecasted.
 
 ---
 
-### **Asia Pacific & China** 
-- The AWS Cloud in Asia Pacific and China has 44 Availability Zones within 14 geographic Regions, with 34 Edge Network locations and 5 Regional Edge Cache locations.
+### 2. **Reserved Instances (RIS)**
 
-<details>
-  <summary>Click to View Asia Pacific & China Region</summary>
-  
-| **Region**            | **Availability Zones (AZs)**                                                             | **Local Zones** | **Wavelength Zones**  |
-|----------------------|------------------------------------------------------------------------------------------|-----------------|-----------------------|
-| **Beijing**         | `cn-north-1a`, `cn-north-1b`, `cn-north-1c`                                                    | -               | -                     |
-| **Hong Kong SAR**   | `ap-east-1a`, `ap-east-1b`, `ap-east-1c`                                                       | -               | -                     |
-| **Hyderabad**       | `ap-south-2a`, `ap-south-2b`, `ap-south-2c`                                                    | -               | -                     |
-| **Jakarta**         | `ap-southeast-3a`, `ap-southeast-3b`, `ap-southeast-3c`                                        | -               | -                     |
-| **Malaysia**        | `ap-southeast-4a`, `ap-southeast-4b`, `ap-southeast-4c`                                        | -               | -                     |
-| **Melbourne**       | `ap-southeast-5a`, `ap-southeast-5b`, `ap-southeast-5c`                                        | -               | -                     |
-| **Mumbai**         | `ap-south-1a`, `ap-south-1b`, `ap-south-1c`                                                     | Chennai, Kolkata | -                     |
-| **Ningxia**        | `cn-northwest-1a`, `cn-northwest-1b`, `cn-northwest-1c`                                         | -               | -                     |
-| **Osaka**          | `ap-northeast-3a`, `ap-northeast-3b`, `ap-northeast-3c`                                         | -               | -                     |
-| **Seoul**          | `ap-northeast-2a`, `ap-northeast-2b`, `ap-northeast-2c`, `ap-northeast-2d`                        | -               | Seoul                 |
-| **Singapore**      | `ap-southeast-1a`, `ap-southeast-1b`, `ap-southeast-1c`                                         | Jakarta         | -                     |
-| **Sydney**         | `ap-southeast-2a`, `ap-southeast-2b`, `ap-southeast-2c`                                         | Perth, Brisbane | -                     |
-| **Thailand**       | `ap-southeast-6a`, `ap-southeast-6b`, `ap-southeast-6c`                                         | Bangkok         | -                     |
-| **Tokyo**          | `ap-northeast-1a`, `ap-northeast-1b`, `ap-northeast-1c`, `ap-northeast-1d`                        | Osaka           | Tokyo                 |
+#### Description:
+- Reserved Instances involve a commitment to use EC2 instances for a **1 or 3-year term**.
+- Users can pay in three ways: **All upfront**, **Partial upfront**, or **No upfront**.
+- Reserved Instances offer **up to 72% discounts** compared to on-demand pricing, depending on the payment option.
+- You can also opt for **Convertible RIS** which allows flexibility in instance types, as long as the new instance value is equal or greater.
 
-#### **Edge Locations in Asia Pacific & China**  
-- **Australia:** Brisbane, Melbourne, Perth, Sydney  
-- **China:** Beijing, Shanghai, Zhongwei, Shenzhen  
-- **India:** Bangalore, Chennai, Hyderabad, Kolkata, Mumbai, New Delhi, Pune  
-- **Indonesia:** Jakarta  
-- **Japan:** Osaka, Tokyo  
-- **Malaysia:** Kuala Lumpur  
-- **New Zealand:** Auckland  
-- **Philippines:** Manila  
-- **South Korea:** Seoul  
-- **Taiwan:** Taipei  
-- **Thailand:** Bangkok  
-- **Vietnam:** Hanoi, Ho Chi Minh City  
+#### Pros:
+- **Discounts up to 72%**: Significant savings compared to on-demand pricing.
+- **Predictable pricing**: Costs are fixed for the term of the commitment.
+- **Guaranteed capacity**: Unlike on-demand, you are guaranteed capacity for the chosen instance.
 
-#### **Regional Edge Caches in Asia Pacific & China**  
-- **Mumbai, Singapore, Seoul, Tokyo, Sydney**  
+#### Cons:
+- **Reduced flexibility**: Requires a commitment for 1 to 3 years.
+- **Limited options for changing instances**: Instance types and configurations can be difficult to modify.
 
-</details>
+#### When to Use:
+- **Long-term use**: For predictable production applications or workloads with consistent resource requirements.
+- **Stable workloads** where usage is predictable over time.
 
 ---
 
-### **South America**  
-- The AWS Cloud in South America has 3 Availability Zones within one geographic Region, with four Edge Network locations and one Regional Edge Cache location.
+### 3. **Spot Instances**
 
-<details>
-  <summary>Click to View South America Region</summary>
+#### Description:
+- Spot Instances allow users to bid on unused EC2 capacity, potentially saving up to **90%** compared to on-demand pricing.
+- AWS can terminate a Spot instance with only **2 minutes' notice** if the capacity is needed for on-demand or reserved instances.
 
-| **Region**         | **Availability Zones (AZs)**  |
-|-------------------|----------------------------|
-| **São Paulo**    | `sa-east-1a`, `sa-east-1b`, `sa-east-1c` |
+#### Pros:
+- **Cheapest option**: Discounts of up to 90% make it highly cost-effective for flexible workloads.
+- **Great for non-critical workloads**: Ideal for tasks that can tolerate interruptions.
 
-#### **Edge Locations in South America**  
-- **Argentina:** Buenos Aires  
-- **Brazil:** Fortaleza, Rio de Janeiro, São Paulo  
-- **Chile:** Santiago  
-- **Colombia:** Bogotá  
-- **Peru:** Lima  
+#### Cons:
+- **Risk of termination**: AWS may terminate instances with minimal notice (2 minutes).
+- **Complex setup**: Spot instances require more configuration and management, making them less beginner-friendly.
 
-#### **Regional Edge Caches in South America**  
-- **São Paulo**  
-
-</details>
+#### When to Use:
+- **Non-critical or stateless workloads** (e.g., batch processing, ETL jobs, or analytics).
+- **Flexible workloads** that can be restarted if terminated, such as data processing tasks.
 
 ---
 
-### **Europe, Middle East & Africa**  
-- The AWS Cloud in Europe, Middle East and Africa has 36 Availability Zones within 12 geographic Regions, with 39 Edge Network locations and two Regional Edge Cache locations.
+### 4. **Savings Plans**
 
-<details>
-  <summary>Click to View Europe, Middle East & Africa Region</summary>
+#### Description:
+- Savings Plans are a flexible pricing model that provides **up to 72% discount** on EC2, Lambda, and other services in exchange for a 1 or 3-year commitment.
+- There are two types of Savings Plans:
+  - **Compute Savings Plan**: The most flexible, offering savings across a range of EC2 instance families, regions, and even Fargate.
+  - **EC2 Instance Savings Plan**: Offers higher discounts but requires commitment to a specific EC2 instance family and region.
 
-| **Region**       | **Availability Zones (AZs)** | **Local Zones** | **Wavelength Zones**  |
-|-----------------|-----------------------------|-----------------|-----------------------|
-| **Bahrain**    | `me-south-1a`, `me-south-1b`, `me-south-1c` | Manama | - |
-| **Cape Town**  | `af-south-1a`, `af-south-1b`, `af-south-1c` | Johannesburg | - |
-| **Frankfurt**  | `eu-central-1a`, `eu-central-1b`, `eu-central-1c` | Hamburg, Berlin | - |
-| **Ireland**    | `eu-west-1a`, `eu-west-1b`, `eu-west-1c` | - | - |
-| **London**     | `eu-west-2a`, `eu-west-2b`, `eu-west-2c` | - | London |
-| **Paris**      | `eu-west-3a`, `eu-west-3b`, `eu-west-3c` | - | - |
-| **Stockholm**  | `eu-north-1a`, `eu-north-1b`, `eu-north-1c` | - | - |
+#### Pros:
+- **Flexible**: The Compute Savings Plan allows for changes in instance types and regions.
+- **Up to 72% discount**: Savings can be substantial for users with predictable workloads.
+- **Easy to manage**: More straightforward than Reserved Instances or Spot.
 
-#### **Edge Locations in Europe, Middle East & Africa**  
-- **Cities:** Amsterdam, Berlin, Dubai, Frankfurt, Johannesburg, London, Madrid, Paris, Stockholm, Tel Aviv, Zurich  
+#### Cons:
+- **Requires commitment**: You must commit to a certain amount of compute usage over a 1 or 3-year period.
+- **On-demand pricing for excess usage**: If your usage exceeds the committed amount, it is billed at on-demand rates.
 
-#### **Regional Edge Caches in Europe, Middle East & Africa**  
-- **Frankfurt, London**  
-
-</details>
+#### When to Use:
+- **Predictable workloads**: For continuous workloads that are consistent and predictable, such as EC2, Fargate, or Lambda workloads.
+- **Flexible and long-term needs**: When you want savings but also need flexibility in instance types and regions.
 
 ---
 
-## **AWS Infrastructure Benefits**  
+### 5. **Free Tier**
 
-AWS provides a highly **resilient, scalable, and low-latency** cloud infrastructure. Key benefits include:  
+#### Description:
+- AWS provides a **Free Tier** which includes three types of offerings:
+  - **Free Trial**: Short-term trials of various services.
+  - **12-month Free Tier**: Free usage for 12 months after sign-up (e.g., EC2, S3, Lambda).
+  - **Always Free**: Some services are free indefinitely, but with usage limits (e.g., AWS Lambda, DynamoDB).
 
-1. **Fault Tolerance:** Multiple AZs prevent downtime due to hardware failures.  
-2. **Low Latency:** Edge Locations and Wavelength Zones ensure fast content delivery.  
-3. **Scalability:** Auto Scaling, Elastic Load Balancing, and AWS Global Accelerator optimize performance.  
-4. **Security & Compliance:** AWS follows industry security standards like **ISO 27001, SOC 2, HIPAA, and GDPR**.  
+#### Pros:
+- **Free for 12 months**: Up to 750 hours per month for EC2, 5GB of S3 storage, and other offerings.
+- **Always free services**: Some services like AWS Lambda and DynamoDB are free indefinitely with certain limits.
+- **Ideal for testing and learning**: Great for experimenting with AWS services and learning the platform.
+
+#### Cons:
+- **Impractical for production**: The Free Tier is not designed for large-scale production use, especially for enterprise applications.
+- **Usage limits**: Services are free only up to certain limits; exceeding those limits results in charges at standard rates.
+
+#### When to Use:
+- **Learning and testing**: Ideal for small projects, Proof of Concepts (POCs), or if you want to explore AWS services without incurring costs.
+- **Non-production applications**: Running small websites or applications without large-scale resource needs.
 
 ---
+
+### Pricing Model Summary:
+
+| **Pricing Model**       | **Discounts**            | **Commitment**        | **Best for**                          |
+|-------------------------|--------------------------|-----------------------|---------------------------------------|
+| **On-Demand**            | No discount              | No commitment         | Short-term, unpredictable workloads  |
+| **Reserved Instances**   | Up to 72%                | 1 or 3 years          | Predictable, long-term workloads     |
+| **Spot Instances**       | Up to 90%                | No commitment         | Non-critical, flexible workloads     |
+| **Savings Plans**        | Up to 72%                | 1 or 3 years          | Predictable workloads with flexibility|
+| **Free Tier**            | Free up to usage limits  | No commitment         | Learning, testing, non-production    |
+
+---
+
+### Conclusion:
+- AWS offers diverse pricing models catering to different needs: **On-Demand** for flexibility, **Reserved Instances** for long-term savings, **Spot Instances** for cost-sensitive, non-critical workloads, and **Savings Plans** for predictable usage with flexibility.
+- The **Free Tier** is perfect for small-scale testing and learning. 
 
