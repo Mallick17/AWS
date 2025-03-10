@@ -120,7 +120,7 @@
 
 ### Pricing Model Summary:
 <details>
-  <summary>Click to view summary of Pricing Model -- Description -- USe Cases -- Key Services</summary>
+  <summary>Click to view summary of Pricing Model -- Description -- Use Cases -- Key Services</summary>
 
 | Pricing Model                                  | Description                                                                 | Key Services                    | Use Cases                                              |
 |-----------------------------------------------|---------------------------------------------------------------------------|---------------------------------|-------------------------------------------------------|
