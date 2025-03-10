@@ -147,7 +147,6 @@ AWS offers several services to improve network performance:
 
 4. **AWS Local Zones:** Deploy AWS services closer to users, minimizing latency for region-specific applications.
 
----
 By optimizing both network infrastructure and application code, businesses can reduce latency, improving overall system performance and user experience.
 
 ---
