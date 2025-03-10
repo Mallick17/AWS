@@ -75,27 +75,7 @@
 
 ---
 
-### 3. **Spot Instances**
-
-#### Description:
-- Spot Instances allow users to bid on unused EC2 capacity, potentially saving up to **90%** compared to on-demand pricing. AWS offers these instances at a lower cost since they are using excess capacity.
-- AWS can terminate a Spot instance with only **2 minutes' notice** if the capacity is needed for on-demand or reserved instances.
-
-#### Pros:
-- **Cheapest option**: Discounts of up to 90% make it highly cost-effective for flexible workloads.
-- **Great for non-critical workloads**: Ideal for tasks that can tolerate interruptions.
-
-#### Cons:
-- **Risk of termination**: AWS may terminate instances with minimal notice (2 minutes).
-- **Complex setup**: Spot instances require more configuration and management, making them less beginner-friendly.
-
-#### When to Use:
-- **Non-critical or stateless workloads** (e.g., batch processing, ETL jobs, or analytics).
-- **Flexible workloads** that can be restarted if terminated, such as data processing tasks.
-
----
-
-### 4. **Savings Plans**
+### 3. **Savings Plans**
 
 #### Description:
 - Savings Plans are a flexible pricing model that provides **up to 72% discount** on EC2, Lambda, and other services in exchange for a 1 or 3-year commitment.
@@ -115,6 +95,25 @@
 #### When to Use:
 - **Predictable workloads**: For continuous workloads that are consistent and predictable, such as EC2, Fargate, or Lambda workloads.
 - **Flexible and long-term needs**: When you want savings but also need flexibility in instance types and regions.
+
+---
+### 4. **Spot Instances**
+
+#### Description:
+- Spot Instances allow users to bid on unused EC2 capacity, potentially saving up to **90%** compared to on-demand pricing. AWS offers these instances at a lower cost since they are using excess capacity.
+- AWS can terminate a Spot instance with only **2 minutes' notice** if the capacity is needed for on-demand or reserved instances.
+
+#### Pros:
+- **Cheapest option**: Discounts of up to 90% make it highly cost-effective for flexible workloads.
+- **Great for non-critical workloads**: Ideal for tasks that can tolerate interruptions.
+
+#### Cons:
+- **Risk of termination**: AWS may terminate instances with minimal notice (2 minutes).
+- **Complex setup**: Spot instances require more configuration and management, making them less beginner-friendly.
+
+#### When to Use:
+- **Non-critical or stateless workloads** (e.g., batch processing, ETL jobs, or analytics).
+- **Flexible workloads** that can be restarted if terminated, such as data processing tasks.
 
 ---
 
