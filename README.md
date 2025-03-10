@@ -117,7 +117,7 @@
 
 ---
 <details>
-  <summary>Key Differences and Common Features inbetween REserved Instances and Savings Plan</summary>
+  <summary>Key Differences and Common Features inbetween Reserved Instances and Savings Plan</summary>
 
 
 ### **Key Differences Between Reserved Instances and Savings Plans**
@@ -128,14 +128,7 @@
 | **Flexibility**              | **Low flexibility**. Once committed, you're locked into specific instance types and regions. | **High flexibility**. Can be applied to different instance types, regions, and services. |
 | **Applicable Services**      | Primarily for **EC2 instances** (including specific instance types). | Applies to a broader range of services including **EC2**, **Lambda**, **Fargate**, and **SageMaker**. |
 | **Discounts**                | Typically offers a discount of **30-60%** compared to On-Demand pricing. | Offers discounts of **up to 72%** for EC2 instances (varies by plan type), with slightly lower discounts for other services (e.g., Lambda and Fargate). |
-| **Payment Options**          | Available with **3 payment options**: 
-   - All Upfront
-   - Partial Upfront
-   - No Upfront |
-   | Available with **3 payment options**: 
-   - All Upfront
-   - Partial Upfront
-   - No Upfront |
+| **Payment Options** Available with **3 payment options**:  |  - All Upfront- Partial Upfront- No Upfront | - All Upfront- Partial Upfront - No Upfront |
 | **Changes After Purchase**   | Difficult to modify after purchase. Reserved Instances cannot easily be changed, and you may be locked into your commitment unless you sell the reserved instances on the **Reserved Instance Marketplace**. | More flexible. You can change the instance type, region, or even switch between services like EC2, Lambda, Fargate, etc., within your committed dollar amount. |
 | **Term Length**              | Reserved Instances are available with **1-year** or **3-year** terms. | Savings Plans also have **1-year** or **3-year** terms. |
 | **Instance Family & Size**   | Specific to an **instance family** (e.g., M5, C5) and size (e.g., m5.large, c5.xlarge) when using Standard RIs. | No instance type or size restrictions. Applicable across instance families and sizes. |
