@@ -1,4 +1,5 @@
-## AWS Pricing Models: 
+## AWS Pricing Models
+
 | **Pricing Model**       | **Discounts**            | **Commitment**        | **Best for**                          |
 |-------------------------|--------------------------|-----------------------|---------------------------------------|
 | **On-Demand**            | No discount              | No commitment         | Short-term, unpredictable workloads  |
