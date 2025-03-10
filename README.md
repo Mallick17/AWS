@@ -55,7 +55,7 @@
 ### 3. **Spot Instances**
 
 #### Description:
-- Spot Instances allow users to bid on unused EC2 capacity, potentially saving up to **90%** compared to on-demand pricing.
+- Spot Instances allow users to bid on unused EC2 capacity, potentially saving up to **90%** compared to on-demand pricing. AWS offers these instances at a lower cost since they are using excess capacity.
 - AWS can terminate a Spot instance with only **2 minutes' notice** if the capacity is needed for on-demand or reserved instances.
 
 #### Pros:
@@ -119,6 +119,8 @@
 ---
 
 ### Pricing Model Summary:
+<details>
+  <summary>Click to view summary of Pricing Model -- Description -- USe Cases -- Key Services</summary>
 
 | Pricing Model                                  | Description                                                                 | Key Services                    | Use Cases                                              |
 |-----------------------------------------------|---------------------------------------------------------------------------|---------------------------------|-------------------------------------------------------|
@@ -133,6 +135,7 @@
 | **Elastic Block Store (EBS) Pricing**          | Pricing based on storage amount, provisioned IOPS, and throughput for attached EBS volumes. | EBS                             | Block storage for applications that require high throughput. |
 | **Object Storage Pricing**                     | Pricing for S3 varies based on storage class (Standard, IA, Glacier) and amount of data stored and retrieved. | S3, Glacier                     | Static content storage, backup, and archival.        |
 
+</details>
 ---
 
 
