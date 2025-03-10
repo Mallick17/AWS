@@ -1,5 +1,20 @@
 ## AWS Pricing Models: 
 
+| Pricing Model                                  | Description                                                                 | Key Services                    | Use Cases                                              |
+|-----------------------------------------------|---------------------------------------------------------------------------|---------------------------------|-------------------------------------------------------|
+| **Pay-as-You-Go**                              | Pay only for what you use without long-term contracts or upfront commitments. Charges are based on actual consumption. | EC2, Lambda, S3, RDS           | Variable workloads, unpredictable traffic, and new projects. |
+| **Save When You Commit (Reserved Instances)**  | Get discounts by committing to use a service for 1 or 3 years. Reserved instances offer cost savings compared to on-demand pricing. | EC2, RDS, DynamoDB, ElastiCache | Steady-state workloads with predictable usage.        |
+| **Spot Instances**                             | Purchase unused compute capacity at discounted rates, with the caveat that instances can be interrupted by AWS when they need the capacity back. | EC2, ECS                        | Fault-tolerant workloads, batch jobs, or flexible workloads. |
+| **Savings Plans**                              | Commitment-based pricing model where you commit to a certain amount of usage ($/hour) in exchange for lower costs across specific AWS services. | EC2, Fargate, Lambda           | Long-term projects, committed resource needs over time. |
+| **Free Tier**                                  | Allows users to explore AWS for free, with 12-months of free services, always free offerings, and free trials for some products. | EC2, S3, Lambda, RDS           | Test and development, small-scale usage, learning AWS. |
+| **On-Demand Instances**                        | Pay for compute or database capacity with no long-term commitments or upfront payments. Cost depends on hourly or per-second usage. | EC2, RDS                        | Short-term, spiky, or unpredictable workloads.        |
+| **Dedicated Hosts**                            | Physical servers dedicated for your use. Offers compliance benefits by allowing control over server-bound software licenses. | EC2                             | Licensing-heavy or compliance-based environments.      |
+| **Data Transfer Pricing**                      | Charges for data transfer vary based on the source, destination, and transfer region (e.g., data in is free, data out incurs charges). | S3, EC2, CloudFront             | Heavy data transfer workloads, cross-region application setups. |
+| **Elastic Block Store (EBS) Pricing**          | Pricing based on storage amount, provisioned IOPS, and throughput for attached EBS volumes. | EBS                             | Block storage for applications that require high throughput. |
+| **Object Storage Pricing**                     | Pricing for S3 varies based on storage class (Standard, IA, Glacier) and amount of data stored and retrieved. | S3, Glacier                     | Static content storage, backup, and archival.        |
+
+---
+
 ### 1. **On-Demand Instances**
 
 #### Description:
