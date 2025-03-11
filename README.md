@@ -1,5 +1,5 @@
 # Disaster Recovery of Workloads on AWS: Recovery in the Cloud
-### Detailed Notes on Disaster Recovery (DR) in AWS
+## Disaster Recovery (DR) in AWS
 #### **Why You Need a DR Plan**
 - **Pixar Story**: 
   - In 1998, a Pixar employee accidentally deleted 90% of *Toy Story 2*, but a backup was corrupted.
@@ -32,8 +32,137 @@
 
 ---
 
-### **Disaster Recovery Strategies**
+## **Disaster Recovery Strategies**
 ![image](https://github.com/user-attachments/assets/f427d185-a89a-4121-8263-24ffb779405d)
+
+### Comparison of different **Disaster Recovery (DR) strategies** in cloud computing, particularly for AWS (Amazon Web Services). These strategies are categorized based on two key parameters:  
+
+1. **Recovery Point Objective (RPO):**  
+   - Defines how much data loss is acceptable in case of a failure.  
+   - A **lower RPO** means **less data loss**, while a **higher RPO** means the system can afford to lose more data.  
+
+2. **Recovery Time Objective (RTO):**  
+   - Defines how quickly a system should recover after a failure.  
+   - A **lower RTO** means **faster recovery**, while a **higher RTO** means a longer downtime is acceptable.  
+
+The image divides the DR strategies into **Active/Passive** and **Active/Active** approaches.  
+
+---
+
+### **1. Backup & Restore (Active/Passive)**
+- **RPO / RTO: Hours**  
+- **Description:**
+  - This is the **simplest and most cost-effective** disaster recovery strategy.
+  - Data is **regularly backed up** to AWS storage services such as **Amazon S3 (Simple Storage Service), Amazon Glacier, or AWS Backup**.
+  - However, **no AWS resources are actively running** to support disaster recovery.
+  - In case of a disaster, the **entire infrastructure must be provisioned and restored manually**, which takes time.
+  - This strategy is ideal for **non-critical workloads** where downtime and data loss are acceptable.  
+
+- **Use Cases:**
+  - Data archiving.
+  - Systems that do not require immediate recovery.
+  - Cost-sensitive applications.
+
+- **Pros:**
+  - **Lowest cost** ($).
+  - Simple implementation.
+  - Can be used for long-term data storage.
+
+- **Cons:**
+  - **Slowest recovery time** (RTO of hours).
+  - Higher data loss risk (RPO of hours).
+  - Requires manual intervention to restore services.
+
+---
+
+### **2. Pilot Light (Active/Passive)**
+- **RPO / RTO: Tens of minutes**  
+- **Description:**
+  - In this strategy, **critical data and components** (such as databases) are **always available**, but the rest of the system is **dormant**.
+  - Compute resources (like servers and application instances) **are not fully running**, but **can be quickly started** when needed.
+  - Upon a disaster, additional AWS resources are **scaled up** to meet demand.
+  - This method balances cost and recovery speed, making it faster than Backup & Restore but more economical than fully active systems.
+
+- **Use Cases:**
+  - Applications that need **somewhat fast recovery** but do not require full-time redundancy.
+  - Workloads where the **database must always be available**, but web and application servers can be provisioned later.
+
+- **Pros:**
+  - **Faster recovery** than Backup & Restore.
+  - **Moderate cost** ($$).
+  - Scalable—compute resources can be increased when required.
+
+- **Cons:**
+  - **Still requires some manual intervention** to scale up infrastructure.
+  - Slower than Warm Standby or Active/Active setups.
+
+---
+
+### **3. Warm Standby (Active/Passive)**
+- **RPO / RTO: Minutes**  
+- **Description:**
+  - A **scaled-down** but **fully functional** version of the production environment is **always running** in AWS.
+  - The system is **continuously active** but operates at a **lower capacity**.
+  - When a disaster occurs, AWS resources **scale up quickly** to handle full traffic.
+  - This strategy is commonly used for **business-critical applications** that require **fast recovery** but not full redundancy.
+
+- **Use Cases:**
+  - E-commerce platforms or SaaS applications that need **near-instant recovery**.
+  - Businesses that want **automatic failover** without running a fully redundant infrastructure.
+
+- **Pros:**
+  - **Much faster recovery** than Backup & Restore or Pilot Light (RTO in minutes).
+  - **No need for manual intervention** to start services.
+  - **Balances cost and recovery speed** ($$$).
+
+- **Cons:**
+  - **More expensive** than Backup & Restore and Pilot Light.
+  - Requires **constant monitoring** to ensure readiness.
+
+---
+
+### **4. Multi-site Active/Active (Fully Active)**
+- **RPO / RTO: Real-time**  
+- **Description:**
+  - The **highest level of disaster recovery strategy**, where multiple sites (AWS regions or data centers) are **always running and actively handling traffic**.
+  - **Zero downtime and near-zero data loss**, as requests are automatically routed to healthy instances.
+  - If one site fails, another site immediately takes over without human intervention.
+  - Used for **mission-critical applications** that require **100% availability**.
+
+- **Use Cases:**
+  - Global applications requiring **zero downtime** (e.g., social media platforms, banking systems).
+  - High-traffic web applications with **customers worldwide**.
+  - Services that cannot tolerate **any disruption**.
+
+- **Pros:**
+  - **Fastest recovery time (RTO = real-time)**.
+  - **Lowest data loss (RPO = real-time)**.
+  - Fully automated failover.
+  - Ensures **high availability** and **business continuity**.
+
+- **Cons:**
+  - **Most expensive** disaster recovery option ($$$$).
+  - Requires **complex infrastructure** and advanced AWS services.
+
+---
+
+### **Comparison Summary**
+| DR Strategy | RPO (Data Loss) | RTO (Recovery Time) | Cost | Best Use Case |
+|-------------|---------------|----------------|------|----------------|
+| **Backup & Restore** | Hours | Hours | $ | Low-priority applications, cost-sensitive environments |
+| **Pilot Light** | Tens of minutes | Tens of minutes | $$ | Apps needing some live data but not full-time running |
+| **Warm Standby** | Minutes | Minutes | $$$ | Business-critical apps needing quick failover |
+| **Multi-site Active/Active** | Real-time | Real-time | $$$$ | Mission-critical applications needing zero downtime |
+
+---
+
+### **Final Thoughts**
+- **Backup & Restore** is the simplest and cheapest but has the longest downtime.
+- **Pilot Light** speeds up recovery by keeping **data live** but services idle.
+- **Warm Standby** ensures **faster recovery** with a **partially running system**.
+- **Multi-site Active/Active** is the **best for mission-critical systems** but has **the highest cost**.
+
+Each approach is suited for different business needs based on **budget, downtime tolerance, and criticality of the application**. Companies often **mix multiple strategies** for different workloads to balance cost and availability.
 
 #### **Common DR Strategies:**
 1. **Backup and Restore**:
