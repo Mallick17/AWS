@@ -27,6 +27,7 @@
 3. **Local Zones**
 - "Local zone" (considered a "local edge" in this context) allows you to run your own compute workloads in a specific geographic area with extremely low latency, essentially bringing AWS services closer to the end user in major metropolitan cities; you cannot run your own workloads directly on an edge location, only use it for content delivery. 
 - AWS Local Zones are designed to extend AWS services closer to end users in cities where no AWS Region exists. These zones provide low-latency computing for applications like gaming, live streaming, augmented reality (AR), and machine learning (ML).
+- Local Zones provide a subset of AWS services to run workloads closer to end-users, while edge locations are primarily used for caching and accelerating content delivery.
 
 4. **Wavelength Zones**
 - AWS Wavelength Zones are built for 5G networks, enabling developers to run applications at ultra-low latency by placing compute and storage within telecom operator data centers. These are ideal for applications like autonomous vehicles, real-time gaming, and AR/VR.
