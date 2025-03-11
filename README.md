@@ -33,6 +33,8 @@
 ---
 
 ### **Disaster Recovery Strategies**
+![image](https://github.com/user-attachments/assets/f427d185-a89a-4121-8263-24ffb779405d)
+
 #### **Common DR Strategies:**
 1. **Backup and Restore**:
    - Simple, low-cost option.
