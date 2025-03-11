@@ -11,6 +11,7 @@
 - Amazon Web Services (AWS) operates in a globally distributed cloud infrastructure to provide high availability, low latency, and fault tolerance. This infrastructure is built upon Regions, Availability Zones (AZs), Local Zones, Wavelength Zones, and Edge Locations.
   
 1. **AWS Regions**
+- AWS has the concept of a Region, which is a physical location around the world where we cluster data centers. We call each group of logical data centers an Availability Zone. Each AWS Region consists of a minimum of three, isolated, and physically separate AZs within a geographic area.
 - An AWS Region is a geographically isolated area that contains multiple Availability Zones (AZs). Each AWS Region operates independently and has low-latency connectivity to other Regions.
 - Each AWS Region consists of:
   - Multiple Availability Zones (AZs)
