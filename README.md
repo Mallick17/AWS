@@ -34,7 +34,7 @@
 - AWS Wavelength Zones are built for 5G networks, enabling developers to run applications at ultra-low latency by placing compute and storage within telecom operator data centers. These are ideal for applications like autonomous vehicles, real-time gaming, and AR/VR.
   
 5. **Edge Locations**
-**Edge Locations** are the physical locations where AWS services like **Amazon CloudFront** and **AWS Global Accelerator** cache and deliver content closer to end users. These locations are part of a global network designed to reduce latency, improve performance, and optimize the delivery of content, such as web pages, media files, APIs, etc.
+- **Edge Locations** are the physical locations where AWS services like **Amazon CloudFront** and **AWS Global Accelerator** cache and deliver content closer to end users. These locations are part of a global network designed to reduce latency, improve performance, and optimize the delivery of content, such as web pages, media files, APIs, etc.
 
 #### Key Points:
 - **Purpose:** The primary goal of edge locations is to reduce the time it takes for data to travel across the internet from the source to the user.
@@ -42,8 +42,7 @@
 - **Example:** If you are using **Amazon CloudFront** (a Content Delivery Network service), when someone from London accesses your website, their request may be handled by an edge location in London (or a nearby city) rather than traveling to a central server in another part of the world (e.g., the U.S.).
 
 6. **Local Edge Locations (AWS Local Zones)**
-
-**Local Edge Locations** refer to a specific type of edge location known as **AWS Local Zones**. These are extensions of AWS Regions that are located closer to end-users and are designed to run low-latency applications where AWS's regular data centers (regions) may be too far away.
+- **Local Edge Locations** refer to a specific type of edge location known as **AWS Local Zones**. These are extensions of AWS Regions that are located closer to end-users and are designed to run low-latency applications where AWS's regular data centers (regions) may be too far away.
 
 #### Key Points:
 - **Purpose:** Local Zones are meant to support workloads that require single-digit millisecond latencies to end-users, such as real-time gaming, live video streaming, and edge computing.
