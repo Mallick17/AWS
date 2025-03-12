@@ -42,10 +42,12 @@
 1. **Recovery Point Objective (RPO):**  
    - Defines how much data loss is acceptable in case of a failure.  
    - A **lower RPO** means **less data loss**, while a **higher RPO** means the system can afford to lose more data.  
+  ![image](https://github.com/user-attachments/assets/d8f4025f-a757-4941-b625-246d96b9ace2)
 
 2. **Recovery Time Objective (RTO):**  
    - Defines how quickly a system should recover after a failure.  
    - A **lower RTO** means **faster recovery**, while a **higher RTO** means a longer downtime is acceptable.  
+  ![image](https://github.com/user-attachments/assets/e154a514-0bd5-43e6-bfb1-85868f600ce2)
 
 The image divides the DR strategies into **Active/Passive** and **Active/Active** approaches.  
 
@@ -59,6 +61,7 @@ The image divides the DR strategies into **Active/Passive** and **Active/Active*
   - However, **no AWS resources are actively running** to support disaster recovery.
   - In case of a disaster, the **entire infrastructure must be provisioned and restored manually**, which takes time.
   - This strategy is ideal for **non-critical workloads** where downtime and data loss are acceptable.  
+  ![photo-collage png](https://github.com/user-attachments/assets/9c701e45-7d32-4edd-8903-a4de57fceeb1)
 
 - **Use Cases:**
   - Data archiving.
@@ -84,6 +87,7 @@ The image divides the DR strategies into **Active/Passive** and **Active/Active*
   - Compute resources (like servers and application instances) **are not fully running**, but **can be quickly started** when needed.
   - Upon a disaster, additional AWS resources are **scaled up** to meet demand.
   - This method balances cost and recovery speed, making it faster than Backup & Restore but more economical than fully active systems.
+  ![photo-collage png (1)](https://github.com/user-attachments/assets/7b394927-9fe2-48ed-95ba-e2a0abe5f117)
 
 - **Use Cases:**
   - Applications that need **somewhat fast recovery** but do not require full-time redundancy.
@@ -107,6 +111,7 @@ The image divides the DR strategies into **Active/Passive** and **Active/Active*
   - The system is **continuously active** but operates at a **lower capacity**.
   - When a disaster occurs, AWS resources **scale up quickly** to handle full traffic.
   - This strategy is commonly used for **business-critical applications** that require **fast recovery** but not full redundancy.
+  ![photo-collage png (2)](https://github.com/user-attachments/assets/10196eb2-e7a3-435c-8bc5-acb12f230887)
 
 - **Use Cases:**
   - E-commerce platforms or SaaS applications that need **near-instant recovery**.
@@ -130,6 +135,7 @@ The image divides the DR strategies into **Active/Passive** and **Active/Active*
   - **Zero downtime and near-zero data loss**, as requests are automatically routed to healthy instances.
   - If one site fails, another site immediately takes over without human intervention.
   - Used for **mission-critical applications** that require **100% availability**.
+  ![Screenshot 2025-03-12 093343](https://github.com/user-attachments/assets/79b60c0c-3137-46f5-ab89-f871cc95ced7)
 
 - **Use Cases:**
   - Global applications requiring **zero downtime** (e.g., social media platforms, banking systems).
