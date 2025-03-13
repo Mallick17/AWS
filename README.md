@@ -41,7 +41,53 @@
 #### **Shared Responsibility Model for Resiliency**
 - **AWS's Responsibility**: Infrastructure resiliency (e.g., multiple regions, availability zones).
 - **Customer's Responsibility**: Ensuring the resiliency of their workloads using AWS services.
+![image](https://github.com/user-attachments/assets/33fe3ead-f788-40f4-8bdc-9a7c2fb23ddb)
+#### **AWS Shared Responsibility Model Explanation**
+- AWS operates under a **shared responsibility model**, meaning that security and compliance responsibilities are divided between **AWS (the cloud provider)** and **the customer (cloud user).**
+#### **1. AWS Responsibility – "Security OF the Cloud"**  
+AWS is responsible for protecting the **infrastructure that runs all AWS services**. This includes:  
 
+#### **🔹 Infrastructure Security**  
+- **Compute** (e.g., EC2 instances, Lambda)  
+- **Storage** (e.g., S3, EBS)  
+- **Databases** (e.g., RDS, DynamoDB)  
+- **Networking** (e.g., VPC, Direct Connect)  
+
+#### **🔹 Physical & Hardware Security**  
+- Protecting **AWS Global Infrastructure** (Regions, Availability Zones, and Edge Locations).  
+- Ensuring **hardware security** (server maintenance, networking equipment).  
+- Compliance with industry standards (ISO, SOC, PCI DSS, etc.).  
+
+#### **🔹 Software & Service Security**  
+- Patching and maintaining the underlying AWS infrastructure.  
+- Managing physical security of data centers.  
+
+---
+
+#### **2. Customer Responsibility – "Security IN the Cloud"**  
+Customers are responsible for securing their own **data, applications, and configurations** on AWS. This includes:  
+
+#### **🔹 Data Security**  
+- **Customer Data** – Encrypting and managing data securely.  
+- **Client-side Data Encryption** – Implementing encryption before sending data to AWS.  
+- **Server-side Encryption** – Using AWS services to encrypt data at rest.  
+
+#### **🔹 Application & Identity Security**  
+- Managing **IAM (Identity and Access Management)** permissions.  
+- Implementing **Multi-Factor Authentication (MFA)** for users.  
+- Securing applications running on AWS.  
+
+#### **🔹 Network Security**  
+- Configuring **firewalls, security groups, and VPC settings**.  
+- Implementing **Network Traffic Protection** (encryption, integrity, and identity verification).  
+- Managing **operating system updates and patches**.  
+
+---
+#### **Key Takeaways**  
+- AWS **secures the infrastructure**, while **customers secure their applications and data**.
+- AWS ensures **physical and hardware security**, but customers must handle **IAM, encryption, and application security**.
+- It follows a **"shared security responsibility"** approach, meaning **misconfigurations on the customer side can lead to security breaches**.
+   
 ---
 
 ## **Disaster Recovery Strategies**
