@@ -44,12 +44,14 @@
 1. **Recovery Point Objective (RPO):**  
    - Defines how much data loss is acceptable in case of a failure.  
    - A **lower RPO** means **less data loss**, while a **higher RPO** means the system can afford to lose more data.  
-  ![image](https://github.com/user-attachments/assets/d8f4025f-a757-4941-b625-246d96b9ace2)
+![image](https://github.com/user-attachments/assets/95354598-85f2-499c-bfe9-85b30d545378)
+
 
 2. **Recovery Time Objective (RTO):**  
    - Defines how quickly a system should recover after a failure.  
    - A **lower RTO** means **faster recovery**, while a **higher RTO** means a longer downtime is acceptable.  
-  ![image](https://github.com/user-attachments/assets/e154a514-0bd5-43e6-bfb1-85868f600ce2)
+![image](https://github.com/user-attachments/assets/acc88c13-47ae-4a9d-81ea-0010f5b3531c)
+
 
 The image divides the DR strategies into **Active/Passive** and **Active/Active** approaches.  
 
