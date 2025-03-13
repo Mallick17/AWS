@@ -8,6 +8,8 @@
 
 #### **What is Disaster Recovery?**
 - **Definition**: DR is about ensuring business continuity after an event disrupts service.
+  ![image](https://github.com/user-attachments/assets/fad158db-ce18-4e9f-8a11-94d0f2a9f9b2)
+
 - **Key Concepts**:
   - **Resiliency**: Comprising both disaster recovery (recovery after failure) and availability (prevention of failure).
   - **Availability**: Measures to ensure minimal service downtime.
