@@ -52,9 +52,6 @@
    - A **lower RTO** means **faster recovery**, while a **higher RTO** means a longer downtime is acceptable.  
 ![image](https://github.com/user-attachments/assets/acc88c13-47ae-4a9d-81ea-0010f5b3531c)
 
-
-The image divides the DR strategies into **Active/Passive** and **Active/Active** approaches.  
-
 ---
 
 ### **1. Backup & Restore (Active/Passive)**
