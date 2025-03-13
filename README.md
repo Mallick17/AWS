@@ -51,12 +51,14 @@
 
 **Key Differences Between Edge Locations and Local Edge Locations:**
 
-| **Aspect** | **Edge Locations** | **Local Edge Locations (AWS Local Zones)** |
-|------------|--------------------|-------------------------------------------|
-| **Purpose** | Content Delivery (caching data for low latency) | Low-latency processing for edge computing applications |
-| **Services** | Primarily used for services like CloudFront, Route 53, Lambda@Edge | Compute, storage, and other AWS services closer to end-users |
-| **Latency** | Reduces latency by caching content closer to users | Provides ultra-low latency for applications requiring fast processing |
-| **Use Cases** | Content Delivery Network (CDN), DNS resolution | Real-time applications (gaming, video streaming), edge computing |
+| Feature          | **Local Edge** (Local Zones, Wavelength, Outposts) | **Edge Locations** (CloudFront, Global Accelerator) |
+|-----------------|--------------------------------------------------|--------------------------------------|
+| **Purpose** | Extends AWS compute, storage, and networking closer to users for **low-latency applications** | Optimizes content delivery and security by caching and processing requests at the edge |
+| **Services Used** | **Local Zones, Wavelength, Outposts, Snow Family** | **CloudFront, Global Accelerator, Route 53** |
+| **Latency Focus** | **Ultra-low latency (single-digit milliseconds)** for real-time applications | **Improves request/response time** by caching static/dynamic content |
+| **Compute & Storage** | Provides AWS **compute (EC2), storage (EBS), and networking** at the edge | Primarily **caches content**, does not provide full compute capabilities |
+| **Use Cases** | **Gaming, AR/VR, IoT, video streaming, 5G applications, real-time analytics** | **Web acceleration, API caching, DDoS protection, content delivery** |
+| **Example Locations** | **Metro areas near end-users (e.g., AWS Local Zones in Los Angeles, Chicago)** | **450+ globally distributed locations for CloudFront** |
 
 ---
 ## AWS Global Infrastructure Architecture
