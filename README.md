@@ -19,7 +19,7 @@
 ---
 
 #### **Disaster Recovery vs. Availability**
-![resiliency-objectives](https://github.com/user-attachments/assets/60e564a6-1ec6-421c-a3cc-7b863e369ce0)
+![image](https://github.com/user-attachments/assets/8e1a3f6f-3c17-470d-a461-9b2372482917)
 
 - **Disaster**: A significant event that prevents your application from fulfilling its function at its primary deployed location.
 - **High Availability**: Prevents service loss through redundant architectures, e.g., multiple availability zones or regions.
