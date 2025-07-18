@@ -29,7 +29,7 @@ With this method, you test the green version first. If everything looks good, yo
 * **Lifecycle stage**: Steps in the deployment process, like testing before traffic is switched.
 * **Lifecycle hook**: A special step (like a Lambda function) that checks if the deployment is working.
 * **Listener**: Listens for incoming traffic (requests) and sends it to the right version.
-* **Rule**: Tells the listener where to send traffic based on conditions.
+* **Rule**: Tells the listener where to send traffic based on conditions.(ALB)
 * **Target group**: A group of servers or containers that handle traffic.
 * **Traffic shift**: The process of moving all traffic from blue to green.
 
