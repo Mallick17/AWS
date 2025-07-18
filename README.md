@@ -44,17 +44,7 @@ With this method, you test the green version first. If everything looks good, yo
 
 ---
 
-Here’s a much simpler version of your explanation, using plain language:
-
----
-
-### 🚀 What is the Blue/Green Deployment Process in ECS?
-
-Amazon ECS uses **blue/green deployment** to safely update your app. It follows **six simple steps** to make sure the new version works well before users start using it.
-
----
-
-### 🔁 6 Easy Steps in the Deployment Process
+### 6 Easy Steps in the Deployment Process
 
 1. **Preparation**
    Set up the new version (**green**) alongside the current one (**blue**). ECS gets everything ready like new service versions and target groups.
@@ -76,7 +66,7 @@ Amazon ECS uses **blue/green deployment** to safely update your app. It follows 
 
 ---
 
-### 🔄 Blue/Green Deployment Workflow (Simple Overview)
+### Blue/Green Deployment Workflow (Simple Overview)
 
 1. **Start**
    All users go to the blue version. The green version is set up but not getting traffic.
@@ -105,7 +95,7 @@ Amazon ECS uses **blue/green deployment** to safely update your app. It follows 
 ---
 
 
-## 🛠️ Deployment Lifecycle Stages (Defined by AWS to Monitor our Deployments)
+## Deployment Lifecycle Stages (Defined by AWS to Monitor our Deployments)
 
 | Stage                                   | What's Happening                                                                                        | Use this stage for lifecycle hook? |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
