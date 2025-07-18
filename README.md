@@ -197,8 +197,6 @@ AWS needs a way to **control and split traffic** between blue and green versions
 
 > Example: You run a website called `shop.com`. You use an **ALB** that forwards traffic to either the blue or green version of your service.
 
----
-
 ### 2. **Set the Deployment Type to Blue/Green**
 
 In your ECS service settings:
@@ -208,8 +206,6 @@ In your ECS service settings:
 
 > Example: Instead of replacing your old app right away, AWS keeps blue running while green is tested in parallel.
 
----
-
 ### 3. **Use the ECS Deployment Controller**
 
 This tells ECS to handle the deployment logic.
@@ -218,13 +214,9 @@ You don’t need to configure anything complicated — just make sure **ECS is c
 
 ---
 
-## Optional (But Recommended) Settings
+## Optional (But Recommended safer and smarter) Settings
 
-These make your deployment **safer and smarter**:
-
----
-
-### Bake Time
+### 1. Bake Time
 
 > **What it is**: A waiting period (like 5–15 minutes) **after** green gets live traffic.
 
@@ -234,7 +226,7 @@ These make your deployment **safer and smarter**:
 
 ---
 
-### CloudWatch Alarms
+### 2. CloudWatch Alarms
 
 > **What it is**: Monitors your service’s performance (like CPU, memory, errors).
 
@@ -244,7 +236,7 @@ These make your deployment **safer and smarter**:
 
 ---
 
-### Lifecycle Hooks
+### 3. Lifecycle Hooks
 
 > **What it is**: Small actions or tests you can run **during the deployment**.
 
