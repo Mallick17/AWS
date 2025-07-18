@@ -179,7 +179,7 @@ You need one of the following so ECS can shift traffic smoothly:
 ---
 
 <details>
-   <summary>What Do You Need for Blue/Green Deployment?</summary>
+   <summary>Application Load Balancer resources for blue/green deployments</summary>
 
 ## What Do You Need for Blue/Green Deployment?
 
