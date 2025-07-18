@@ -105,9 +105,9 @@ Amazon ECS uses **blue/green deployment** to safely update your app. It follows 
 ---
 
 
-## 🛠️ Deployment Lifecycle Stages 
+## 🛠️ Deployment Lifecycle Stages (Defined by AWS to Monitor our Deployments)
 
-| Stage                                   | What's Happening (In Simple Words)                                                                      | Use this stage for lifecycle hook? |
+| Stage                                   | What's Happening                                                                                        | Use this stage for lifecycle hook? |
 | --------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
 | **1. RECONCILE_SERVICE**               | ECS checks if you have multiple active versions. Only happens in special cases.                         | Yes               |
 | **2. PRE_SCALE_UP**                   | Green version hasn't started yet. Blue is live and handling all user traffic.                           |  Yes               |
