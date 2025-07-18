@@ -44,6 +44,9 @@ With this method, you test the green version first. If everything looks good, yo
 
 ---
 
+<img width="784" height="487" alt="image" src="https://github.com/user-attachments/assets/930e9346-c930-456d-803c-0e8c530e9f1d" />
+
+
 ### 6 Easy Steps in the Deployment Process
 
 1. **Preparation**
